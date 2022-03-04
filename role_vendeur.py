@@ -12,13 +12,14 @@ from discord_slash.utils.manage_components import *
 from discord_components import *
 from discord_slash import cog_ext
 
+
 class Role_vendeur(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @cog_ext.cog_slash(name = "role_vendeur", description = "Ajoute les rôles de vendeur à l'utilisateur.")
-    @commands.has_permissions(manage_roles = True)
-    async def role_vendeur(self, ctx, user : discord.User):
+    @cog_ext.cog_slash(name="role_vendeur", description="Ajoute les rôles de vendeur à l'utilisateur.")
+    @commands.has_permissions(manage_roles=True)
+    async def role_vendeur(self, ctx, user: discord.User):
         guild = ctx.guild
 
         if guild.id == 705089080693751850:
@@ -33,18 +34,19 @@ class Role_vendeur(commands.Cog):
             await user.add_roles(role3)
             await user.add_roles(role4)
 
-
-            emserver = discord.Embed(description = f"Les rôles de vente ont bien été ajoutés à {user.mention}.", timestamp=datetime.datetime.utcnow(), color = 0xFFA500)
+            emserver = discord.Embed(description=f"Les rôles de vente ont bien été ajoutés à {user.mention}.",
+                                     timestamp=datetime.datetime.utcnow(), color=0xFFA500)
             emserver.set_footer(icon_url=guild.icon_url, text=f"{guild.name}")
 
-            await ctx.send(embed = emserver)
+            await ctx.send(embed=emserver)
 
         else:
 
-            emserver = discord.Embed(description = f"Vous ne pouvez pas effectuer cette commande sur ce serveur.", timestamp=datetime.datetime.utcnow(), color = 0xFFA500)
+            emserver = discord.Embed(description=f"Vous ne pouvez pas effectuer cette commande sur ce serveur.",
+                                     timestamp=datetime.datetime.utcnow(), color=0xFFA500)
             emserver.set_footer(icon_url=guild.icon_url, text=f"{guild.name}")
 
-            await ctx.send(embed = emserver)
+            await ctx.send(embed=emserver)
 
 
 def setup(bot):
