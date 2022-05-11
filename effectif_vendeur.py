@@ -17,10 +17,10 @@ class EffeVendeur(commands.Cog):
         total_effectif = 0
         blacklist_users = []
         data_roles = [
-            {"name": "Vendeur# Expérimenté#+", "id": 830762213219762216, "count": 0, "list_users": []},
-            {"name": "Vendeur# Confirmé#+", "id": 797183065272483842, "count": 0, "list_users": []},
-            {"name": "Vendeur", "id": 797898409318416385, "count": 0, "list_users": []},
-            {"name": "Vendeur# Test+", "id": 797183068125134868, "count": 0, "list_users": []}
+            {"name": "Vendeur# Expérimenté#+", "id": 928733361290215541, "count": 0, "list_users": []},
+            {"name": "Vendeur# Confirmé#+", "id": 928733361290215540, "count": 0, "list_users": []},
+            {"name": "Vendeur", "id": 928733361290215538, "count": 0, "list_users": []},
+            {"name": "Vendeur# Test+", "id": 928733361290215538, "count": 0, "list_users": []}
         ]
 
         for member in guild.members:

@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5a8295-7084-4f2c-8c13-ec2508e742c8" name="Changes" comment="Ajout d'une raison de refus de candidature ou d'entretien">
-      <change afterPath="$PROJECT_DIR$/autocommit.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/absence.py" beforeDir="false" afterPath="$PROJECT_DIR$/absence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/effectif_vendeur.py" beforeDir="false" afterPath="$PROJECT_DIR$/effectif_vendeur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money.py" beforeDir="false" afterPath="$PROJECT_DIR$/money.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_member.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_member.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role_vendeur.py" beforeDir="false" afterPath="$PROJECT_DIR$/role_vendeur.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
