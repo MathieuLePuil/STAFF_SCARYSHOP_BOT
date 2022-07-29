@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5a8295-7084-4f2c-8c13-ec2508e742c8" name="Changes" comment="Ajout d'une raison de refus de candidature ou d'entretien">
-      <change afterPath="$PROJECT_DIR$/rc_redacteur.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role_redacteur.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
