@@ -24,7 +24,7 @@ bot.remove_command("help")
 slash = SlashCommand(bot, sync_commands=True)
 
 extensions = ['absence', 'effectif_vendeur', 'on_member', 'rc_vendeur', 'rc_moderateur', 'role_vendeur',
-              'role_moderateur', 'iw_vendeur', 'iw_moderateur', 'help', 'money', 'iw_redacteur']
+              'role_moderateur', 'iw_vendeur', 'iw_moderateur', 'help', 'money', 'iw_redacteur', 'rc_redacteur']
 
 
 @bot.event
