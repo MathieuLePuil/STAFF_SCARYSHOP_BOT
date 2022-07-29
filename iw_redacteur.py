@@ -13,18 +13,18 @@ from discord_components import *
 from discord_slash import cog_ext
 
 
-class Iw_moderateur(commands.Cog):
+class Iw_redacteur(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @cog_ext.cog_slash(name="iw_moderateur",
-                       description="Accepte ou refuse un utilisateur dans l'équipe des modérateurs.")
+    @cog_ext.cog_slash(name="iw_redacteur",
+                       description="Accepte ou refuse un utilisateur dans l'équipe des rédacteurs.")
     @commands.has_permissions(manage_roles=True)
-    async def iw_moderateur(self, ctx, status, user: discord.User, *, reason="Aucune raison n'a été renseignée !"):
+    async def iw_redacteur(self, ctx, status, user: discord.User, *, reason="Aucune raison n'a été renseignée !"):
         guild = ctx.guild
         if status == "accept":
             emuser = discord.Embed(title="Félicitations 🎉✨",
-                                   description="Vous êtes **accepté dans l'équipe** des **modérateurs du ScaryShop**. Vous pouvez commencer à découvrir vos accès sur le serveur Staff du ScaryShop. \n \n > ***Lien du serveur :***  https://discord.gg/S5dwdD97Cr \n \n Nous vous invitions à mentionner la personne qui vous a fait passé votre entretien afin de prendre un rendez-vous pour les explications. \n \n **Bienvenue dans l'équipe !**",
+                                   description="Vous êtes **accepté dans l'équipe** des **rédacteurs du ScaryShop**. Vous pouvez commencer à découvrir vos accès sur le serveur Staff du ScaryShop. \n \n > ***Lien du serveur :***  https://discord.gg/S5dwdD97Cr \n \n Nous vous invitions à mentionner la personne qui vous a fait passé votre entretien afin de prendre un rendez-vous pour les explications. \n \n **Bienvenue dans l'équipe !**",
                                    timestamp=datetime.datetime.utcnow(), color=0xFFA500)
             emuser.set_footer(icon_url=guild.icon_url, text=f"{guild.name}")
 
@@ -38,7 +38,7 @@ class Iw_moderateur(commands.Cog):
 
         elif status == "decline":
             emuser = discord.Embed(title="Désolé 🥺",
-                                   description=f"Malheureusement, votre entretien modérateur **ne donnera pas de suite**. Vous pourrez tout de même retenter votre chance dans 3 mois. \n \n > *Raison :* {reason} \n \n **Bon courage pour la suite !**",
+                                   description=f"Malheureusement, votre entretien rédacteur **ne donnera pas de suite**. Vous pourrez tout de même retenter votre chance dans 3 mois. \n \n > *Raison :* {reason} \n \n **Bon courage pour la suite !**",
                                    timestamp=datetime.datetime.utcnow(), color=0xFFA500)
             emuser.set_footer(icon_url=guild.icon_url, text=f"{guild.name}")
 
@@ -55,4 +55,4 @@ class Iw_moderateur(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Iw_moderateur(bot))
+    bot.add_cog(Iw_redacteur(bot))
